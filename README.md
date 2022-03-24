@@ -1,3 +1,27 @@
+# Laravel CRUD Sample
+
+Your first Laravel project
+
+## Installing / Getting started
+
+### Prerequisites
+- PHP 8.1.3
+- - fileinfo extension
+- Composer 2.2.9
+
+### Create a new project
+```composer create-project --prefer-dist laravel/laravel crud
+```
+
+### Database connection configuration in .env
+```DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
