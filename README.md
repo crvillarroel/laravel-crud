@@ -10,11 +10,20 @@ Your first Laravel project
 - Composer 2.2.9
 
 ### Create a new project
-```composer create-project --prefer-dist laravel/laravel crud
+```
+composer create-project --prefer-dist laravel/laravel crud
+```
+
+### Create the database in mysql container
+```
+mysql -u root -p
+create database crud;
+show databases;
 ```
 
 ### Database connection configuration in .env
-```DB_CONNECTION=mysql
+```
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=your_database_name
@@ -24,10 +33,17 @@ DB_PASSWORD=your_database_password
 
 ## Create a fully CRUD
 ### Create the required migration (table / entity setup)
+> Be sure the 'crud' database already exist.
 ```php artisan make:migration create_products_table --create=products
 ```
 
-
+### Run the migration in the php container
+```
+php artisan migrate
+```
+```
+Migration table created successfully.
+```
 
 # Laravel
 
