@@ -9,12 +9,12 @@ Your first Laravel project
 - - fileinfo extension
 - Composer 2.2.9
 
-### Create a new project
+### Create a new project (php container)
 ```
 composer create-project --prefer-dist laravel/laravel crud
 ```
 
-### Create the database in mysql container
+### Create the database (mysql container)
 ```
 mysql -u root -p
 create database crud;
@@ -32,18 +32,33 @@ DB_PASSWORD=your_database_password
 ```
 
 ## Create a fully CRUD
-### Create the required migration (table / entity setup)
+### Create the required migration (php container)
 > Be sure the 'crud' database already exist.
-```php artisan make:migration create_products_table --create=products
+```
+php artisan make:migration create_products_table --create=products
 ```
 
-### Run the migration in the php container
+### Run the migration (php container)
 ```
 php artisan migrate
 ```
 ```
 Migration table created successfully.
 ```
+
+### Create controller and model (php container) 
+```
+php artisan make:controller ProductController --resource --model=Product
+```
+```
+A App\Models\Product model does not exist. Do you want to generate it? (yes/no) [yes]:
+Model created successfully.
+Controller created successfully.
+```
+
+### Add Resource Route
+
+
 
 # Laravel
 
