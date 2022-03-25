@@ -9,7 +9,7 @@ Your first Laravel project
 - - fileinfo extension
 - Composer 2.2.9
 
-### Create a new project (php container)
+## Create a new project (php container)
 ```
 composer create-project --prefer-dist laravel/laravel crud
 ```
