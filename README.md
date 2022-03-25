@@ -31,7 +31,7 @@ DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
 ```
 
-## Create a fully CRUD
+## Create database tables
 ### Create the required migration (php container)
 > Be sure the 'crud' database already exist.
 ```
@@ -46,7 +46,7 @@ php artisan migrate
 Migration table created successfully.
 ```
 
-### Create controller and model (php container) 
+## Create Controller and Model (php container) 
 ```
 php artisan make:controller ProductController --resource --model=Product
 ```
@@ -65,6 +65,8 @@ Add the route to the controller into app/routes/web.php
 ```
 Route::resource('products', ProductController::class);
 ```
+
+## Create Views using balde
 
 
 
