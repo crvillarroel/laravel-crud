@@ -56,6 +56,10 @@ Model created successfully.
 Controller created successfully.
 ```
 
+### Implement controller functions as required
+Go into app/Http/Controllers
+Go into app/Models
+
 ### Add Resource Route
 
 
