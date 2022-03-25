@@ -60,7 +60,11 @@ Controller created successfully.
 Go into app/Http/Controllers
 Go into app/Models
 
-### Add Resource Route
+### Add resource route
+Add the route to the controller into app/routes/web.php
+```
+Route::resource('products', ProductController::class);
+```
 
 
 
